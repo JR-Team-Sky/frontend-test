@@ -1,0 +1,248 @@
+body,html,head {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    /* border: 1px solid red; */
+    height: 900px;
+    background-image: url("./image/header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    padding: 20px 100px;
+}
+
+.logo img {
+    height: 50px
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+    font-family: 'Arvo', serif;
+    font-size: 65px;
+    color: #fff;
+}
+
+section {
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+
+section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-wrapper {
+    margin: 10px 10px;
+    width: 500px;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.card-wrapper.welcome {
+    background: #005ba9;
+}
+
+.card-wrapper.book, .card-wrapper.facilities {
+    border: 3px solid #005ba9;
+}
+
+.card-title {
+    font-family: 'Arvo', serif;
+    font-size: 48px;
+}
+
+.welcome .card-title {
+    margin: 10px;
+    padding-bottom: 5px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.description {
+    margin: 10px 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.welcome .description {
+    color: #fff;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.book .card-title {
+    margin: 10px;
+    padding-bottom: 5px;
+    color: #005ba9;
+    border-bottom: 1px solid #666;
+}
+
+.book .description {
+    color: #666;
+}
+
+.book .input-area {
+    margin: 30px 10px 10px;
+}
+
+#datepicker, #nights {
+    height: 40px;
+    border-top: 1px solid #005ba9;
+}
+
+#datepicker {
+    width: 400px;
+}
+
+#datepicker::placeholder, #nights::placeholder {
+    color: #005ba9;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#check-button {
+    margin: 0 10px;
+    width: 200px;
+    height: 40px;
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+    font-weight: 300;
+    background: #005ba9;
+    color: #fff;
+}
+
+.facilities .card-title {
+    margin: 10px;
+    padding-bottom: 5px;
+    color: #005ba9;
+    border-bottom: 1px solid #666;
+}
+
+.description {
+    color: #666;
+}
+
+figure {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    background: #111;
+    
+}
+
+.copy {
+    display: inline-block;
+    width: 200px;
+    line-height: 50px;
+    color: #eee;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.socialmedia-link {
+    display: inline-block;
+    width: 200px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.socialmedia-link a {
+    color: #eee;
+}
+
+@media only screen and (max-width: 576px) {
+    .facilities {
+        display: none;
+    }
+    .header-title {
+        font-size: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .logo {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card-wrapper {
+        margin: 10px 10px;
+        width: 450px;
+        height: 300px;
+        box-sizing: border-box;
+    }
+    #datepicker {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .card-wrapper {
+        margin: 10px 10px;
+        width: 400px;
+        height: 300px;
+        box-sizing: border-box;
+    }
+    #datepicker {
+        width: 300px;
+    }
+    #nights {
+        width: 150px;
+    }
+    #datepicker::placeholder, #nights::placeholder {
+        font-size: 14px;
+    }
+    #check-button {
+        width: 150px;
+        font-size: 14px;
+    }
+    .header-title {
+        font-size: 36px;
+    }
+    .logo {
+        text-align: left;
+        padding: 20px 40px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .card-wrapper {
+        margin: 10px 10px;
+        width: 350px;
+        height: 300px;
+        box-sizing: border-box;
+    }
+    #datepicker {
+        width: 250px;
+    }
+    #nights {
+        width: 120px;
+    }
+    #check-button {
+        width: 150px;
+        font-size: 14px;
+    }
+}
+
+
